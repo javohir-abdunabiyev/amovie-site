@@ -566,13 +566,7 @@ function reload(arr, place) {
 
         const promoTitle = document.querySelector(".promo__title")
         const promo_descr = document.querySelector(".promo__descr")
-        li.onclick = () => {
-            promoTitle.innerHTML = sorted[i].Title
-            promo_descr.innerHTML = sorted[i].Plot
-            genre.innerHTML = sorted[i].Genre
-            bg.style.background = `url(${sorted[i].Poster}) center center/cover no-repeat`
-            
-        }
+        
 
         li.ondblclick = () => {
             modal.classList.add("dialog_style")
